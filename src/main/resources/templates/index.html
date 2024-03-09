@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>SalesMaster</title>
+        <meta name="description" content="Demonstration: call webapi, etc" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+        <link th:href="@{/style/test1.css}" rel="stylesheet" type="text/css"/>
+        <script th:src="@{/js/test1.js}" defer></script>
+    </head>
+  <body>
+    <div class=mainWrapper>
+      <div class=contents>
+        <div class=leftSide>
+          <div class=functions>
+            <label class=title>Functions</label>
+            <div class=function>function 1</div>
+            <div class=function>function 2</div>
+            <div class=function>function 3</div>
+          </div>
+          <div class=special>
+            <button class=button id="table">Initialize</button>
+          </div>
+        </div>
+        <div class=center>
+          <div class=response>
+            <div class=result>
+              <label class=title>Result</label>
+              <label class=resultFunction>test</label>
+            </div>
+            <textarea class=output rows="10" readonly>aaa</textarea>
+          </div>
+          <div class=log>
+            <div class=accessLog>
+              <label class=title>Access Log</label>
+              <textarea class=output rows="10" readonly>aaa</textarea>
+            </div>
+            <div class=serverLog>
+              <label class=title>Server Log</label>
+              <div class="server" id="server"></div>
+              <div class="server">aaaa</div>
+            </div>
+          </div>
+        </div>
+        <div class=rightSide>
+          <div class=folder>
+              <div class=inputFolder>
+                <label class=title>Input</label>
+                <button class="button reset">Reset</button>
+              </div>
+              <textarea class=output rows="10" readonly>aaa</textarea>
+          </div>
+          <div class=folder>
+              <label class=title>Output</label>
+              <textarea class=output rows="10" readonly>aaa</textarea>
+          </div>
+          <div class=folder>
+              <label class=title>Processed</label>
+              <textarea class=output rows="10" readonly>aaa</textarea>
+          </div>
+        </div>
+      </div>
+      <dialog id="dialog-sample">
+        <div id="dialog-container">
+          <div id="dialog-content" class="dialog">
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </body>
+</html>
